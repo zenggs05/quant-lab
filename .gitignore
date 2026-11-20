@@ -1,0 +1,11 @@
+data/
+__pycache__/
+*.pyc
+.venv*/
+submission.csv
+*.parquet
+*.zip
+kaggle.json
+.env
+**/kaggle/build/*.csv
+**/reports/oof_*/

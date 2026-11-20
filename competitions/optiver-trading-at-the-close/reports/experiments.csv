@@ -1,0 +1,17 @@
+time,experiment,rounds,n_features,mae_f0,mae_f1,mae_f2,mae_f3,mae_mean,mae_std,note
+2026-11-19 13:33,zeros,,0,5.88043,6.42617,6.42215,6.4755,6.30106,0.24376,"selection folds only; fixed rounds, no early stopping"
+2026-11-19 13:33,stock_median,,0,5.88482,6.42849,6.42248,6.47639,6.30304,0.24236,"selection folds only; fixed rounds, no early stopping"
+2026-11-19 13:33,lgb_raw,800,13,5.81939,6.34448,6.32571,6.37984,6.21735,0.23059,"selection folds only; fixed rounds, no early stopping"
+2026-11-19 13:33,lgb_v1,800,61,5.77003,6.29327,6.27371,6.32881,6.16646,0.22973,"selection folds only; fixed rounds, no early stopping"
+2026-11-19 13:33,lgb_v1_zerosum,800,61,5.76486,6.28666,6.27211,6.32527,6.16223,0.23024,"selection folds only; fixed rounds, no early stopping"
+2026-11-19 13:51,lgb_v1_zerosum,600,61,5.76288,6.28538,6.27122,6.32501,6.16112,0.23077,week1 feature comparison; zero-sum applied
+2026-11-19 13:58,lgb_v2_zerosum,600,74,5.76531,6.28704,6.26874,6.32351,6.16115,0.22939,week1 feature comparison; zero-sum applied
+2026-11-19 14:15,online_v1_k10,600,61,6.26603,6.32174,6.29388,-0.00423,online refit; mae_std column holds mean(online-static) for this row
+2026-11-19 14:34,HOLDOUT_zeros,600,61,,,,,5.99364,,one-shot holdout date_id 400-480
+2026-11-19 14:34,HOLDOUT_lgb_v1_static,600,61,,,,,5.85455,,one-shot holdout date_id 400-480
+2026-11-19 14:34,HOLDOUT_lgb_v1_online_k10,600,61,,,,,5.84782,,one-shot holdout date_id 400-480
+2026-11-19 16:51,w2_lgb_static,,61,5.76288,6.28538,6.27122,6.32501,6.16112,0.23077,week2; zero-sum applied; blends use leave-one-fold-out weights
+2026-11-19 16:51,w2_lgb_online,,61,5.76128,6.28079,6.26603,6.32174,6.15746,0.22964,week2; zero-sum applied; blends use leave-one-fold-out weights
+2026-11-19 16:51,w2_cb_static,,61,5.76888,6.28983,6.2743,6.33041,6.16586,0.23011,week2; zero-sum applied; blends use leave-one-fold-out weights
+2026-11-19 16:51,w2_blend_lgb_static_lofo,,61,5.75934,6.28064,6.26616,6.32208,6.15705,0.23053,week2; zero-sum applied; blends use leave-one-fold-out weights
+2026-11-19 16:51,w2_blend_lgb_online_lofo,,61,5.75819,6.27761,6.26284,6.31973,6.15459,0.22982,week2; zero-sum applied; blends use leave-one-fold-out weights
