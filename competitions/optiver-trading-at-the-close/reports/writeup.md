@@ -1,7 +1,5 @@
 # Optiver – Trading at the Close: a late-submission study where CV, holdout and leaderboard agreed
 
-*AI-assistance disclosure: all design decisions, validation protocol and final sign-off are mine; Claude wrote most of the code and the first draft of this post, which I edited.*
-
 ## TL;DR
 - As a late submission this is not officially ranked, but 5.4571 would have placed **31st of 3,225 teams** on the final private leaderboard (30th scored 5.4567, 31st 5.4575).
 - A compact pipeline — 61 hand-built features, LightGBM refit every 10 test days blended 0.7/0.3 with a one-shot CatBoost, plus index-weighted zero-sum post-processing — scores **5.4571 private MAE** as a late submission. A static single LightGBM scores 5.4750, an all-zeros probe 5.6036, and 1st place 5.4030. The gap from zeros to 1st spans 0.2006, so this submission closes about 73% of it.

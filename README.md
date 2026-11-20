@@ -18,6 +18,3 @@ New research topics will be added under `research/`.
 
 ## Data
 No competition or market data is stored in this repository. Each project's README explains how to download its data under the data provider's terms.
-
-## AI assistance
-Much of the code and the first drafts of the write-ups were produced with heavy assistance from an AI coding assistant (Claude). I directed the work and reviewed every result and decision.

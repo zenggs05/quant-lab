@@ -26,6 +26,3 @@ python -m pytest tests
 python kaggle/build_notebook.py   # builds kaggle/build/*.py from kaggle/submission.py
 ```
 Pinned package versions: `requirements.lock.txt` (Python 3.13 research environment). The Kaggle notebook must run on the pinned 2023 image (Python 3.10).
-
-## AI assistance
-The code and the first draft of the write-up were produced with heavy assistance from an AI coding assistant (Claude). I directed the work and reviewed every result and decision.
